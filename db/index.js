@@ -1,8 +1,8 @@
-// ℹ️ package responsible to make the connection with mongodb
+// this package responsible to make the connection with mongodb
 // https://www.npmjs.com/package/mongoose
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://127.0.0.1/valhalla", { family: 4 })
+  .connect("mongodb://127.0.0.1/valhalla")
   .then(() => {
     console.log(`Connected to Mongo! Welcome to Valhalla!  🪓🛡️☠️`);
   })
